@@ -18,30 +18,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Che-Oa-aof">
-                                <rect key="frame" x="111" y="274" width="98" height="21"/>
+                                <rect key="frame" x="112" y="83" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-nR-y9x">
-                                <rect key="frame" x="127" y="305" width="67" height="30"/>
+                                <rect key="frame" x="128" y="119" width="67" height="30"/>
                                 <state key="normal" title="PUSH ME"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRz-Kn-R07"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-5P-wFf">
+                                <rect key="frame" x="111" y="169" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sBu-ww-o4f"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-Iw-5U2">
+                                <rect key="frame" x="112" y="218" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WB0-Dh-BEm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0Bv-nR-y9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5dw-RG-oOG"/>
-                            <constraint firstItem="Che-Oa-aof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PPW-uE-UA9"/>
-                            <constraint firstItem="Che-Oa-aof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VEM-Pd-D9a"/>
-                            <constraint firstItem="0Bv-nR-y9x" firstAttribute="top" secondItem="Che-Oa-aof" secondAttribute="bottom" constant="10" id="qX7-sa-pvu"/>
+                            <constraint firstItem="Z4F-5P-wFf" firstAttribute="top" secondItem="0Bv-nR-y9x" secondAttribute="bottom" constant="20" id="57c-43-BMO"/>
+                            <constraint firstItem="xcS-Iw-5U2" firstAttribute="top" secondItem="0Bv-nR-y9x" secondAttribute="bottom" constant="69" id="BzB-sM-wS0"/>
+                            <constraint firstItem="Z4F-5P-wFf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="FGP-pO-VHJ"/>
+                            <constraint firstItem="Che-Oa-aof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-190.5" id="PPW-uE-UA9"/>
+                            <constraint firstItem="Che-Oa-aof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="VEM-Pd-D9a"/>
+                            <constraint firstItem="0Bv-nR-y9x" firstAttribute="top" secondItem="Che-Oa-aof" secondAttribute="bottom" constant="15" id="gjY-Hw-S4t"/>
+                            <constraint firstItem="xcS-Iw-5U2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="jg5-nm-6hd"/>
+                            <constraint firstItem="0Bv-nR-y9x" firstAttribute="centerX" secondItem="Che-Oa-aof" secondAttribute="centerX" id="sio-LI-vbj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="Che-Oa-aof" id="IX5-Ir-uJg"/>
+                        <outlet property="text1" destination="Z4F-5P-wFf" id="09z-PI-Ffs"/>
+                        <outlet property="text2" destination="xcS-Iw-5U2" id="ex9-4b-vnG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
